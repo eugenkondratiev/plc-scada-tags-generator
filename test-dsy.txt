@@ -1,0 +1,240 @@
+<instanceElementDesc name="[0]">
+	<comment>ПЧ насос конденсата 1. Пуск</comment>
+	<attribute name="Alias" value="MY264"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[1]">
+	<comment>ПЧ насос конденсата 2. Пуск</comment>
+	<attribute name="Alias" value="MY265"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[2]">
+	<comment>Транспортер золоудаления из-под топок. Пуск</comment>
+	<attribute name="Alias" value="MY267"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[3]">
+	<comment>Транспортер золы на улицу. Пуск</comment>
+	<attribute name="Alias" value="MY268"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[4]">
+	<comment>Вентилятор пыли . Пуск</comment>
+	<attribute name="Alias" value="MY270"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[5]">
+	<comment>Ленточный конвейер щепы. Пуск</comment>
+	<attribute name="Alias" value="MY273"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[6]">
+	<comment>Шнек циклона. Пуск</comment>
+	<attribute name="Alias" value="MY284"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[7]">
+	<comment>Шнек фильтра. Пуск</comment>
+	<attribute name="Alias" value="MY285"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[8]">
+	<comment>Вибратор фильтра. Пуск</comment>
+	<attribute name="Alias" value="MY287"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[9]">
+	<comment>Шнек пыли 1. Пуск</comment>
+	<attribute name="Alias" value="MY288"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[10]">
+	<comment>Шнек пыли 2. Пуск</comment>
+	<attribute name="Alias" value="MY290"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[11]">
+	<comment>Пневмозаброс  пыли . Пуск</comment>
+	<attribute name="Alias" value="MY271"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[12]">
+	<comment>Вентилятор вторичного дутья . Пуск</comment>
+	<attribute name="Alias" value="MY272"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[13]">
+	<comment>ПЧ привод пневмозаброса 2. Пуск</comment>
+	<attribute name="Alias" value="MY266"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[14]">
+	<comment>ПЧ шнека 2 бункера-питателя. Пуск</comment>
+	<attribute name="Alias" value="MY269"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[15]">
+	<comment>ПЧ шнека 2 бункера-питателя. Реверс</comment>
+	<attribute name="Alias" value="MY269_7"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[16]">
+	<comment>ПЧ  привод пневмозаброса 1. Пуск</comment>
+	<attribute name="Alias" value="MY274"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[17]">
+	<comment>ПЧ решетки. Пуск</comment>
+	<attribute name="Alias" value="MY275"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[18]">
+	<comment>ПЧ решетки. Реверс</comment>
+	<attribute name="Alias" value="MY275_7"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[19]">
+	<comment>ПЧ  питательного насоса 1. Пуск</comment>
+	<attribute name="Alias" value="MY276"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[20]">
+	<comment>ПЧ  питательного насоса 2. Пуск</comment>
+	<attribute name="Alias" value="MY277"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[21]">
+	<comment>ПЧ  вентилятора третичного воздуха. Пуск</comment>
+	<attribute name="Alias" value="MY279"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[22]">
+	<comment>ПЧ  шнека 1 бункера-питателя. Пуск</comment>
+	<attribute name="Alias" value="MY282"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[23]">
+	<comment>ПЧ  шнека 1 бункера-питателя. Реверс</comment>
+	<attribute name="Alias" value="MY282_7"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[24]">
+	<comment>ПЧ дутьевого вентилятора. Пуск</comment>
+	<attribute name="Alias" value="MY283"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[25]">
+	<comment>ПЧ Дымососа. Пуск</comment>
+	<attribute name="Alias" value="MY286"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[26]">
+	<comment>ПЧ Подпитки от ХВО. Пуск</comment>
+	<attribute name="Alias" value="MY260"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[27]">
+	<comment>Пуск линии топлива</comment>
+	<attribute name="Alias" value="SA3"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[28]">
+	<comment>Звуковая сигнализация аварийная</comment>
+	<attribute name="Alias" value="SA1"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[29]">
+	<comment>Звуковая сигнализация предупредительная</comment>
+	<attribute name="Alias" value="SA2"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[30]">
+	<comment>Давление воздуха в коллекторе 2. Проба</comment>
+	<attribute name="Alias" value="C237"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[31]">
+	<comment>Давление воздуха зона 2. Проба</comment>
+	<attribute name="Alias" value="C222"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[32]">
+	<comment>Давление воздуха зона 3. Проба</comment>
+	<attribute name="Alias" value="C223"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[33]">
+	<comment>Давление воздуха зона 4. Проба</comment>
+	<attribute name="Alias" value="C224"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[34]">
+	<comment>Давление воздуха зона 5. Проба</comment>
+	<attribute name="Alias" value="C225"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[35]">
+	<comment>Давление воздуха вторичного слева. Проба</comment>
+	<attribute name="Alias" value="C228"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[36]">
+	<comment>Давление воздуха вторичного справа. Проба</comment>
+	<attribute name="Alias" value="C229"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[37]">
+	<comment>Разрежение после фильтра. Проба</comment>
+	<attribute name="Alias" value="C230"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[38]">
+	<comment>Разрежение после циклона. Проба</comment>
+	<attribute name="Alias" value="C231"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[39]">
+	<comment>Разрежение перед циклоном. Проба</comment>
+	<attribute name="Alias" value="C232"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[40]">
+	<comment>Разрежение перед экономайзером. Проба</comment>
+	<attribute name="Alias" value="C235"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[41]">
+	<comment>ГПЗ. Открыть</comment>
+	<attribute name="Alias" value="MY250_1"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[42]">
+	<comment>ГПЗ. Закрыть</comment>
+	<attribute name="Alias" value="MY250_2"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[43]">
+	<comment>Клапан охлажденного пара с РОУ. Открыть</comment>
+	<attribute name="Alias" value="ZY300_1"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[44]">
+	<comment>Клапан охлажденного пара с РОУ. Закрыть</comment>
+	<attribute name="Alias" value="ZY300_2"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[45]">
+	<comment>Клапан охлажденного пара с РОУ. Стоп</comment>
+	<attribute name="Alias" value="ZY300_3"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[46]">
+	<comment>Клапан пара на РОУ. Открыть</comment>
+	<attribute name="Alias" value="ZY303_1"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[47]">
+	<comment>Клапан пара на РОУ. Закрыть</comment>
+	<attribute name="Alias" value="ZY303_2"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[48]">
+	<comment>Клапан пара на РОУ. Стоп</comment>
+	<attribute name="Alias" value="ZY303_3"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[49]">
+	<comment>Клапан воды на РОУ. Открыть</comment>
+	<attribute name="Alias" value="ZY304_1"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[50]">
+	<comment>Клапан воды на РОУ. Закрыть</comment>
+	<attribute name="Alias" value="ZY304_2"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[51]">
+	<comment>Клапан воды на РОУ. Стоп</comment>
+	<attribute name="Alias" value="ZY304_3"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[52]">
+	<comment>ИМ пара на деаэратор. Больше</comment>
+	<attribute name="Alias" value="MY248_1"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[53]">
+	<comment>ИМ пара на деаэратор. Меньше</comment>
+	<attribute name="Alias" value="MY248_2"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[54]">
+	<comment>ИМ воды на РОУ. Больше</comment>
+	<attribute name="Alias" value="MY302_1"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[55]">
+	<comment>ИМ воды на РОУ. Меньше</comment>
+	<attribute name="Alias" value="MY302_2"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[56]">
+	<comment>ИМ перепуска теплообменика 1. Больше</comment>
+	<attribute name="Alias" value="MY296_1"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[57]">
+	<comment>ИМ перепуска теплообменика 1. Меньше</comment>
+	<attribute name="Alias" value="MY296_2"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[58]">
+	<comment>ИМ перепуска теплообменика 2. Больше</comment>
+	<attribute name="Alias" value="MY297_1"></attribute>
+</instanceElementDesc>
+<instanceElementDesc name="[59]">
+	<comment>ИМ перепуска теплообменика 2. Меньше</comment>
+	<attribute name="Alias" value="MY297_2"></attribute>
+</instanceElementDesc>
