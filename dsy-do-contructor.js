@@ -30,14 +30,27 @@ const formVariablsString = (alias, comment) => `\t\t<variables name="${alias}" t
 
 const formatAlias = (_alias) => {
     return _alias
-        .replace(".5", '')
+        // .replace(".5", '')
         .replace(/[\.\s]/, '_')
 }
 const formEquipmentString = ({ _comment, _alias, _area, _index, _params }) => {
-    return `${process.env.BLR}.DO.${_alias};Cluster1;DOwithTRN_1;${_area || "_BLR1"};;${_comment};${_index};do;${_params};;;;;;Internal;;;;;;${_alias};;;;`
+    return `${process.env.ZONE}.DO.${_alias};Cluster1;DOwithTRN_1;${_area || "_BLR1"};;${_comment};${_index};do;${_params};;;;;;Internal;;;;;;${_alias};;;;`
 }
 
 const dataArray = require('./data/' + process.env.BLR + '/dos')
+
+const formBoolPack = ({ _comment, _alias, _packword, _packbit }) => {
+    return `${_alias}_val = NOT BitRead( boolPack${_packword} , ${_packbit}); //${_comment}`
+}
+
+const boolpackArray = dataArray
+    .filter(([_comment, _alias]) => _alias)
+    .map(([_comment, _alias, _area, _index, _params, _packword, _packbit], index) => {
+        if (!_alias) return ""
+        const newAlias = formatAlias(_alias)
+
+        return formBoolPack({ _comment, _alias: newAlias, _packword, _packbit })
+    })
 
 const equipmentArray = dataArray
     .filter(([_comment, _alias]) => _alias)
@@ -76,10 +89,13 @@ const result = HEADER + aliasesArray.join('\n') + '\n\t</variables>\n' + varsArr
 // fs.writeFile(EXPORT_PATH + 'do_aliases4_new.xsy', result, (err) => { if (err) console.log(err.message); })
 
 const equipmentCSVlist = equipmentArray.join('\n') + '\n\n\n';
+const boolpackList = boolpackArray.join('\n') + '\n\n\n';
 
 
 module.exports = (PLC) => {
     fs.writeFileSync(EXPORT_PATH + 'do_aliases' + PLC + '_new.xsy', result)
 
     fs.appendFileSync(EXPORT_PATH + 'eqipment' + PLC + '_new.csv', equipmentCSVlist)
+    fs.appendFileSync(EXPORT_PATH + '_boolpack' + PLC + '.txt', boolpackList)
+
 }
