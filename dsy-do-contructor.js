@@ -34,7 +34,7 @@ const formatAlias = (_alias) => {
         .replace(/[\.\s]/, '_')
 }
 const formEquipmentString = ({ _comment, _alias, _area, _index, _params }) => {
-    return `B1.DO.${_alias};Cluster1;DOwithTRN_1;${_area || "_BLR1"};;${_comment};${_index};do;${_params};;;;;;Internal;;;;;;${_alias};;;;`
+    return `${process.env.BLR}.DO.${_alias};Cluster1;DOwithTRN_1;${_area || "_BLR1"};;${_comment};${_index};do;${_params};;;;;;Internal;;;;;;${_alias};;;;`
 }
 
 const dataArray = require('./data/' + process.env.BLR + '/dos')

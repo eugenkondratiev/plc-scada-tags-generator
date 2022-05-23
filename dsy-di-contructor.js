@@ -33,12 +33,21 @@ const formatAlias = (_alias) => {
         .replace(".5", '')
         .replace(/[\.\s]/, '_')
 }
+console.log(process.env.BLR);
 
 const dataArray = require('./data/' + process.env.BLR + '/dis')
 
 const formEquipmentString = ({ _comment, _alias, _area, _index, _params }) => {
-    return `B1.DO.${_alias};Cluster1;DOwithTRN_1;${_area || "_BLR1"};;${_comment};${_index};do;${_params};;;;;;Internal;;;;;;${_alias};;;;`
+    return `${process.env.BLR}.DI.${_alias};Cluster1;DIwithTRN_1;${_area || "_BLR1"};;${_comment};${_index};di;${_params};;;;;;Internal;;;;;;${_alias};;;;`
 }
+const equipmentArray = dataArray
+    .filter(([_comment, _alias]) => _alias)
+    .map(([_comment, _alias, _area, _index, _params], index) => {
+        if (!_alias) return ""
+        const newAlias = formatAlias(_alias)
+
+        return formEquipmentString({ _comment, _alias: newAlias, _area, _index, _params })
+    })
 
 
 const aliasesArray = dataArray
@@ -64,12 +73,11 @@ const varsArray = dataArray
 
 const result = HEADER + aliasesArray.join('\n') + '\n\t</variables>\n' + varsArray.join('\n') + '\n\t' + FOOTER
 // console.log(aliasesArray);
-// console.log(varsArray);
-
-// fs.writeFile(EXPORT_PATH + 'di_aliases4_new.xsy', result, (err) => { if (err) console.log(err.message); })
+const equipmentCSVlist = equipmentArray.join('\n') + '\n\n\n';
 
 
 module.exports = (PLC) => {
     fs.writeFileSync(EXPORT_PATH + 'di_aliases' + PLC + '_new.xsy', result)
+    fs.appendFileSync(EXPORT_PATH + 'eqipment' + PLC + '_new.csv', equipmentCSVlist)
 
 }

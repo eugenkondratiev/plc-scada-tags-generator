@@ -54,7 +54,7 @@ const FOOTER = `	</dataBlock>
 const VAR_TYPE = "AI"
 const formEquipmentString = ({ _comment, _alias, _plc, _area, _index, _params }) => {
 
-    return `B1.AI.${_alias};Cluster1;AI_Type1;${_area || "_BLR1"};;${_comment};${_index};ai;;;;;;;${_plc || "PLC1"};;;;;;${_alias};;;;${_params || "plc=index:1,channel:00/03/00;eu=units:°С,format:###.#,min:-2,max:150"}`
+    return `${process.env.BLR}.AI.${_alias};Cluster1;AI_Type1;${_area || "_BLR1"};;${_comment};${_index};ai;;;;;;;${_plc || "PLC1"};;;;;;${_alias};;;;${_params || "plc=index:1,channel:00/03/00;eu=units:°С,format:###.#,min:-2,max:150"}`
 }
 
 
@@ -116,7 +116,7 @@ module.exports = (PLC) => {
     fs.writeFileSync(EXPORT_PATH + 'ai_aliases' + PLC + '_new.xsy', result
         // , (err) => { if (err) console.log(err.message); }
     )
-    fs.appendFileSync(EXPORT_PATH + 'eqipment' + PLC + '_new.csv', equipmentCSVlist)
+    fs.writeFileSync(EXPORT_PATH + 'eqipment' + PLC + '_new.csv', equipmentCSVlist)
 
     // fs.writeFile('test-dsy.txt', aliasesArray.join('\n'), (err) => { if (err) console.log(err.message); })
     // fs.writeFile('test-dsy2.txt', varsArray.join('\n'), (err) => { if (err) console.log(err.message); })

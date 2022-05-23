@@ -2,8 +2,9 @@ const formAIs = require('./dsy-ai-contructor')
 const formDIs = require('./dsy-di-contructor')
 const formAOs = require('./dsy-ao-contructor')
 const formDOs = require('./dsy-do-contructor')
+require('dotenv').config();
 
-const PLC = "4";
+const PLC = process.env.PLC;
 
 function main (){
 
